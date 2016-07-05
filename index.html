@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <link href="css/photon.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/jquery-3.0.0.min.js"></script>
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <h1 class="title"></h1>
+
+            <div class="toolbar-actions">
+                <div class="btn-group">
+                    <button class="btn btn-default active">
+                        <span class="icon icon-home"></span>
+                    </button>
+                    <button class="btn btn-default">
+                        <span class="icon icon-cloud"></span>
+                    </button>
+                </div>
+                <button class="btn btn-default btn-dropdown pull-right">
+                    <span class="icon icon-megaphone"></span>
+                </button>
+            </div>
+        </header>
+
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane-sm sidebar">
+                    <nav class="nav-group">
+                        <a class="nav-group-item active">
+                            <span class="icon icon-home"></span> Home
+                        </a>
+                        <span class="nav-group-item">
+    <span class="icon icon-calendar"></span> Calendar
+                        </span>
+                        <span class="nav-group-item">
+    <span class="icon icon-credit-card"></span> Bills
+                        </span>
+                    </nav>
+                </div>
+                <div id="content" class="pane">
+                    <h1>Hello World!</h1> We are using node
+                    <script>
+                        document.write(process.versions.node)
+                    </script>, Chrome
+                    <script>
+                        document.write(process.versions.chrome)
+                    </script>, and Electron
+                    <script>
+                        document.write(process.versions.electron)
+                    </script>.</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+</script>
+
 </html>
